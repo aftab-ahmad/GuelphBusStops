@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ManageActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/routeID"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Route Name:"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_dark"/>
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/stopName"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Stop Name:"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_dark" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:id="@+id/photo"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector"
+            android:textColor="@android:color/white"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="Upload Photo"
+            android:elevation="4dp"
+            android:onClick="uploadPhoto"/>
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:id="@+id/reminder"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector"
+            android:textColor="@android:color/white"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="Set Reminder"
+            android:onClick="setDate"
+            android:elevation="4dp"/>
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:id="@+id/maintenance"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector"
+            android:textColor="@android:color/white"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="Maintenance Time"
+            android:elevation="4dp"
+            android:onClick="maintenanceTime"/>
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:id="@+id/resign"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector"
+            android:textColor="@android:color/white"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="Resign Stop"
+            android:elevation="4dp"
+            android:onClick="leaveStop"/>
+
+    </LinearLayout>
+</LinearLayout>

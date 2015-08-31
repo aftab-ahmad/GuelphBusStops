@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <PreferenceCategory
+        android:title="@string/data" >
+        
+        <CheckBoxPreference
+     		android:key="mobileBox"
+     		android:summary="On/Off"
+     		android:title="Use Mobile Data"
+            android:layout="@layout/custom_layout"/>
+        <CheckBoxPreference
+     		android:key="wifiBox"
+     		android:summary="On/Off"
+     		android:title="Use Wifi"
+            android:layout="@layout/custom_layout"/>
+
+ 	</PreferenceCategory>
+ 	
+    <PreferenceCategory
+        android:title="General" >
+    	<com.example.aftab.guelphbusstops.DialogPrefs
+        	android:key="About"
+        	android:dialogTitle="About"
+        	android:title="About"
+        	android:summary="Learn More"
+            android:layout="@layout/custom_layout"
+        	android:dialogMessage="@string/aboutText"/>
+
+        <com.example.aftab.guelphbusstops.DialogPrefs
+            android:key="Terms of Use"
+            android:dialogTitle="Terms of Use"
+            android:title="Terms of Use"
+            android:summary="Learn More"
+            android:layout="@layout/custom_layout"
+            android:dialogMessage="@string/terms"/>
+
+    </PreferenceCategory>
+
+
+    
+</PreferenceScreen>
+

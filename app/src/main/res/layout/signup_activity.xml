@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignupActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/routeID"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Route Name:"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_dark"/>
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/stopName"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Stop Name:"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_dark" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/Name"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textColorHint="@android:color/holo_blue_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="25dp"/>
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textColorHint="@android:color/holo_blue_dark"
+            android:hint="Street Address"
+            android:inputType="textPostalAddress"
+            android:layout_marginBottom="25dp"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textColorHint="@android:color/holo_blue_dark"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="25dp"/>
+
+        <EditText
+            android:id="@+id/phoneNum"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textColorHint="@android:color/holo_blue_dark"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:layout_marginBottom="25dp"/>
+
+        <CheckBox
+            android:layout_marginLeft="5dp"
+            android:id="@+id/terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="Accept Terms of Use."
+            android:textSize="17dp"
+            android:layout_marginBottom="25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:gravity="center"
+                android:id="@+id/submit"
+                android:layout_width="243dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector"
+                android:textColor="@android:color/white"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="Submit"
+                android:elevation="4dp"
+                android:onClick="testFunc"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
